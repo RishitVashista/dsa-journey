@@ -14,6 +14,6 @@ time/space complexity. Fresh start, long journey ahead.
 
 - **Language:** [C++]
 - **Started on:** [25 oct 2026 ]
-- **Goal:** [e.g., 300+ problems + strong pattern recognition]
+- **Goal:** [ 500+ problems + strong pattern recognition]
 
  
