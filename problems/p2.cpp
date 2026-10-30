@@ -1,10 +1,10 @@
- #include <iostream>
+  #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
-    int a, b;
-    cin >> a >> b;
+    int a=8, b=11;
+     
 
     string words[] = {"one", "two", "three", "four", "five",
                       "six", "seven", "eight", "nine", "ten",
@@ -12,14 +12,14 @@ int main() {
                       "sixteen", "seventeen", "eighteen", "nineteen"};
 
     for (int i = a; i <= b; i++) {
-        if (i >= 1 && i <= 19) {
-            cout << words[i - 1] << endl;   // 1..19 → English word
+        if (i >= 10 && i <= 19) {
+            cout << words[i - 1] << endl;   
         }
         else if (i % 2 == 0) {
-            cout << "even" << endl;         // 20+ even
+            cout << "even" << endl;          
         }
         else {
-            cout << "odd" << endl;          // 20+ odd
+            cout << "odd" << endl;          
         }
     }
     return 0;
