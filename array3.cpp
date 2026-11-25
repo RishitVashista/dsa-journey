@@ -1,4 +1,4 @@
-// convert an unsorted array to sorted array  12 45 23 51 19 8 
+// convert an unsorted array to sorted array-
 #include<iostream>
 using namespace std;
 int main(){

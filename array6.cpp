@@ -1,35 +1,35 @@
 // find the largest number using a (deliberately inefficient) sort-then-pick approach
 #include <iostream>
 using namespace std;
-
-int main() {
-    int n;
+int main()
+{
+    int n; // for size of array
     cin >> n;
-
-    // guard against empty / invalid input
-    if (n <= 0) {
+    if (n <= 0)
+    {
         cout << "Invalid size" << endl;
         return 0;
     }
 
-    int arr[n];                         // VLA — works in GCC/MinGW
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];// for elemnets of array
     }
-
-    // selection sort (ascending): after each pass, arr[i] holds
-    // the smallest of arr[i..n-1]
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[i]) {
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[j] < arr[i])
+            {
                 int temp = arr[j];
-                arr[j]   = arr[i];
-                arr[i]   = temp;
+                arr[j] = arr[i];
+                arr[i] = temp;
             }
         }
     }
 
     // after ascending sort, the largest element is at the last index
-    cout <<"The largest element is : "<< arr[n - 1] << endl;
+    cout << "The largest element is : " << arr[n - 1] << endl;
     return 0;
 }
